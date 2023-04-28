@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./admin.css">
+    <title>Quan ly kho hang - Admin</title>
+
+</head>
+
+<body>
+<!-- 
+    <div class="header">
+        <div class="logo-admin">
+            <i class="fa-regular fa-user"></i>
+            <span>ADMIN</span>
+        </div>
+        <div class="input__admin">
+            <form>
+                <div class="form-input">
+                    <input type="text" placeholder="Tìm kiếm" class="form-control inputx" id="pwd">
+                </div>
+            </form>
+        </div>
+        <div class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="">Tài khoản</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Sách</a></li>
+            </ul>
+        </div>
+        <div class="img-admin">
+            <a href="#" class="profile">
+                <img src="https://s120-ava-talk.zadn.vn/6/0/f/1/12/120/433fa2f910695b7e0771d3cb2f7a40c2.jpg">
+            </a>
+            <div class="logout">
+                <a href="../index.html">Đăng xuất
+                    <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div> -->
+
+    <button type="button" class="btn-add btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Thêm</button>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Nhập thông tin sách</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="popup">
+                        <div class="table table-input-data">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="">tên sản phẩm </label>
+                                            <input class="form-control" type="text" id="input-name">
+                                        </td>
+
+                                        
+                                    
+                                        <td>
+                                            <label for="">thông tin sản phẩm </label>
+                                            <input class="form-control" type="text" id="input-author">
+                                        </td>
+                                        <td>
+                                            <label for="">Giá</label>
+                                            <input class="form-control" type="number" id="input-price" id="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="">NXB</label>
+                                            <input class="form-control" type="text" id="input-nxb">
+                                        </td>
+                                    
+                                        <td>
+                                            <label for="">Năm XB</label>
+                                            <input class="form-control" type="text" id="input-namxb">
+                                        </td>
+                                        <td>
+                                            <label for="">Mã Hàng</label>
+                                            <input class="form-control" type="text" id="input-mahang">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
+                            <!-- <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="">Tên nhà cung cấp</label>
+                                            <input class="form-control" type="text" id="input-tennhacungcap">
+                                        </td>
+                                    
+                                        <td>
+                                            <label for="">Ngôn ngữ</label>
+                                            <input class="form-control" type="text" id="input-ngonngu">
+                                        </td>
+                                        <td>
+                                            <label for="">Trọng lượng</label>
+                                            <input class="form-control" type="number" id="input-trongluong" id="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
+                            <!-- <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="">Kich thước</label>
+                                            <input class="form-control" type="text" id="input-kichthuoc">
+                                        </td>
+                                    
+                                        <td>
+                                            <label for="">Loại bia</label>
+                                            <input class="form-control" type="text" id="input-loaibia">
+                                        </td>
+                                        <td>
+                                            <label for="">Số trang</label>
+                                            <input class="form-control" type="number" id="input-sotrang" id="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
+
+                            <!-- <div>
+                                <div>
+                                    <label for="">Số lượng</label>
+                                    <input style="width: 250px ;" class="form-control" type="text" id="input-amount">
+                                </div>
+
+                            </div> -->
+
+                            <div class="input-img">
+                                <label for="">Ảnh</label>
+                                <div style="display:flex;">
+                                    <input class="form-control" type="text" id="input-image" placeholder="Image URL"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comment">Giới thiệu</label>
+                                <textarea name="description" class="form-control" rows="5"
+                                    id="input-description"></textarea>
+                            </div>
+                            <div class="button ">
+                                <button class="btn btn-success" data-dismiss="modal" id="create">Thêm</button>
+                                <button id="save" class="btn btn-success" data-dismiss="modal"
+                                    style="display:none ;">Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="main">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên sản phẩm </th>
+                    <th>Thông tin sản phẩm </th>
+                    <th>Giá</th>
+                    <!-- <th>Số lượng</th> -->
+                    <!-- <th>Giới thiệu</th> -->
+                    <th>Ảnh</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="main-show-data">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .slideshow-container 
+{
+  max-width: 100%;
+  position: relative;
+  margin: unset;
+  /* margin-top: -120px; */
+  justify-content: center;
+  /* width: 1000px; */
+    min-width: 1500px;
+    /* margin-top: 1000; */
+    margin-left: 0px;
+    border-bottom:1px solid #e5e5e5*;
+   
+} 
+.mid-hang{
+    display: flex;
+    flex-flow: wrap;
+    max-width: 1200px; 
+  margin:0 auto;
+  justify-content: center;
+  background-color: #ffffff;
+
+  
+}
+.mid-hang .item{
+     margin: 8px 5px 5px 0px; 
+    width: calc(1/5*100% - (1 - 1/5)*10px);
+    /* background: rgb(251, 252, 252); */
+     box-shadow: 0 10px 12px #dfdfdf; 
+    border-radius: 20px;
+    text-align: center;
+    /* position: relative; */
+    overflow: hidden;
+    cursor: pointer;
+   
+    
+}
+.item .image{
+    width: 250px;
+     height: 235px; 
+    margin: 23px auto 0 auto;
+    /* margin-top: 0px; */
+    padding-right:25px;
+}
+.item .img img{
+    width: 100%;
+}
+.item >.img >a{
+    margin-top: 20px;
+}
+.image i
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    color: red;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+} 
+.image img
+{
+    max-width: 100%;
+    height: auto;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+.image:hover::after
+{
+    left: 0;
+}
+/* .image::after
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0,0,0,0.1);
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+} */
+.image:hover img
+{
+    transform: scale(1.1);
+}
+.image:hover i
+{
+    opacity: 1;
+    transition: 0.3s;
+}
+.thongtin> a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    margin-top: 20px;
+}
+.thongtin .gia-tien strong{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+}
+.thongtin .gia-tien strike {
+    font-size: 13px;
+}
+.sale{
+    position: absolute;
+    top: 226px;
+    left: 5px;
+    background: black;
+    border-radius: 40px;
+    width: 60%;
+    padding: 3px 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+}
+.sub-hang label
+{
+    padding: 3px 5px;
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* .duongdan
+{
+    width: 1200px;
+    min-width: 1200px;
+    margin-top: 80px;
+    margin-left: 400px;
+    margin-right:100px ;
+} */
+ .container-sp{
+    width: 1300px;
+    min-width: 1200px;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right:150px ;
+    box-shadow: 0 0 4px 0 rgb(152 165 185 / 20%);
+    border-radius: 3px ;
+    background-color: white;
+} 
+</style>
+      
+    <div class="slideshow-container">
+      <div class="mid-hang">
+          <!--1-->
+
+
+      </div>
+  </div>
+
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
